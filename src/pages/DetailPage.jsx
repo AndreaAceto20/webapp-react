@@ -3,6 +3,7 @@ import { useContext, useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import axios from "axios"
 import ReviewCard from "../components/ReviewCard"
+import ReviewForm from "../components/ReviewForm"
 
 export default function DetailPage() {
     // const { movies } = useContext(GlobalContext)
@@ -45,6 +46,9 @@ export default function DetailPage() {
                     <p>{movie.abstract}</p>
                     <div>
                         {renderReviews()}
+                        <div>
+                            <ReviewForm movie_id={id}></ReviewForm>
+                        </div>
                     </div>
                 </div>
             </div >

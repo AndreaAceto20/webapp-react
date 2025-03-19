@@ -9,10 +9,12 @@ export default function ReviewCard(props) {
         <>
 
             <div>
-                <p> Recensione : {review.text}</p>
+                <p>Recensione : {review.text}</p>
                 <p>Voto : {review.vote}</p>
-                <p> Di : {review.name}</p>
+                <p>Di : {review.name}</p>
             </div>
+
+
 
 
 
