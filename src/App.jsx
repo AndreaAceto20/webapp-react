@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage'
 import DetailPage from './pages/DetailPage'
 import GlobalContext from '../Context/GlobalContext'
 import axios from 'axios'
+import CreateMoviePage from './pages/CreateMoviePage'
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
             <Route Component={DefaulLayout} >
               <Route index Component={HomePage}></Route>
               <Route path=':id' Component={DetailPage}></Route>
+              <Route path="/movies/create" element={<CreateMoviePage />} />
+
             </Route>
           </Routes>
         </BrowserRouter>

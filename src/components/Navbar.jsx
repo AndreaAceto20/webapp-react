@@ -5,6 +5,7 @@ export default function Navbar() {
         <>
             <nav>
                 <NavLink to="/">HOME</NavLink>
+                <NavLink to="/movies/create">Aggiungi film</NavLink>
             </nav>
         </>
     )
